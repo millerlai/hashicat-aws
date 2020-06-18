@@ -1,4 +1,5 @@
-module "vpc" {
-  source = "https://github.com/millerlai/terraform-aws-vpc"
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
 }
+
 
